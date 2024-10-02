@@ -68,8 +68,9 @@ Here’s a step-by-step guide on how to implement the AWS Lambda function for pr
      sqs_client = boto3.client('sqs')
 
      def lambda_handler(event, context):
-         sns_topic_arn = 'arn:aws:sns:us-west-2:411854276167:My-notification-topic'
-         sqs_queue_url = 'https://sqs.us-west-2.amazonaws.com/411854276167/My-notification-queue'
+
+         sns_topic_arn = 'arn:aws:sns:REGION:ACCOUNT_ID:TOPIC_NAME'       #Change the link with your sns URL
+         sqs_queue_url = 'https://sqs.REGION.amazonaws.com/ACCOUNT_ID/QUEUE_NAME'  #change the link with sqs URL
 
          for record in event['Records']:
              print(event)
