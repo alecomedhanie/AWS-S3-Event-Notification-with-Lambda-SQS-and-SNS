@@ -24,8 +24,9 @@ These three lines create **clients** for the following AWS services:
 ### 3. **Lambda Handler Function**
 ```python
 def lambda_handler(event, context):
-    sns_topic_arn = 'arn:aws:sns:us-west-2:411854276167:My-notification-topic'
-    sqs_queue_url = 'https://sqs.us-west-2.amazonaws.com/411854276167/My-notification-queue'
+    sns_topic_arn = 'arn:aws:sns:REGION:ACCOUNT_ID:TOPIC_NAME'       #Change the link with your sns URL
+    sqs_queue_url = 'https://sqs.REGION.amazonaws.com/ACCOUNT_ID/QUEUE_NAME'  #change the link with sqs URL
+    
 ```
 - **`lambda_handler`:** This is the main function that will be executed whenever the Lambda function is triggered.
 - **`event`:** Contains the data that triggered the Lambda function, typically an S3 event notification.
