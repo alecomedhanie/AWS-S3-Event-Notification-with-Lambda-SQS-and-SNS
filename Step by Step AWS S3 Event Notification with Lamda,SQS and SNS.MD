@@ -60,14 +60,15 @@ Here’s a step-by-step guide on how to implement the AWS Lambda function for pr
 3. **Add the Lambda Code**:
    - In the function code section, delete the default code and paste the Lambda code from the previous explanation:
      ```python
-import json
-import boto3
+     import json
+     import boto3
 
-s3_client = boto3.client('s3')
-sns_client = boto3.client('sns')
-sqs_client = boto3.client('sqs')
+     s3_client = boto3.client('s3')
+     sns_client = boto3.client('sns')
+     sqs_client = boto3.client('sqs')
 
-def lambda_handler(event, context):
+     def lambda_handler(event, context):
+
     sns_topic_arn = 'arn:aws:sns:us-west-2:411854276167:Example-notification-topic'   #change this sns queue URL with your URL 
     
     # Define the SQS queue URL
