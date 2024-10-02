@@ -6,10 +6,11 @@ sns_client = boto3.client('sns')
 sqs_client = boto3.client('sqs')
 
 def lambda_handler(event, context):
-    sns_topic_arn = 'arn:aws:sns:us-west-2:411854276167:Example-notification-topic'   #change this sns queue URL with your URL 
+    sns_topic_arn = 'arn:aws:sns:REGION:ACCOUNT_ID:TOPIC_NAME'       #Change the link with your sns URL
     
     # Define the SQS queue URL
-    sqs_queue_url = 'https://sqs.us-west-2.amazonaws.com/411854276167/Example-notification-queue'  #change this sqs queue URL with your URL 
+    sqs_queue_url = 'https://sqs.REGION.amazonaws.com/ACCOUNT_ID/QUEUE_NAME'  #change the link with sqs URL
+
 
     # Process S3 event records
     for record in event['Records']:
