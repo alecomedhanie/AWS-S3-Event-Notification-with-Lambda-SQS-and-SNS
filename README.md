@@ -9,6 +9,10 @@ This project demonstrates how to use an AWS Lambda function to process S3 event 
 3. **Amazon SQS**: A message queue that receives metadata about the S3 file upload.
 4. **Amazon SNS**: A notification service that sends a message about the file upload.
 
+
+   
+![AWS S3 Event Notification with Lambda, SQS and SNS](https://github.com/user-attachments/assets/e5821f67-64dd-4041-a0b5-95dca38decc1)
+
 ## Prerequisites
 Before starting, ensure you have the following:
 - An **AWS account**.
