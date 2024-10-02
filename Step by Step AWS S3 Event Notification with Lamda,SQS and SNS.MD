@@ -59,7 +59,8 @@ Here’s a step-by-step guide on how to implement the AWS Lambda function for pr
 
 3. **Add the Lambda Code**:
    - In the function code section, delete the default code and paste the Lambda code from the previous explanation:
-     ```pythonimport json
+     ```python
+import json
 import boto3
 
 s3_client = boto3.client('s3')
