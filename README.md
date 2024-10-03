@@ -10,7 +10,8 @@ This project demonstrates how to use an AWS Lambda function to process S3 event 
 4. **Amazon SNS**: A notification service that sends a message about the file upload.
 
 
-![AWS S3 Event Notification with Lambda, SQS and SNS](https://github.com/user-attachments/assets/64a35c66-a24e-478d-bcb3-8c682f92a73b)
+
+![aws s3 event with lamda sns and sqs ](https://github.com/user-attachments/assets/4ebfa743-4a7f-4b49-8f45-56ec4eca515f)
 
    
 
